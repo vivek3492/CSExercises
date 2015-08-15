@@ -10,9 +10,10 @@ namespace CSExercises
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Enter your name");
-            string name = Console.ReadLine();
-            Console.WriteLine("Good morning {0}", name);
+            Console.WriteLine("Enter the integer");
+            int x = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("The square of the integer is {0}", Math.Sqrt(x));
+            ;
             
         }
     }

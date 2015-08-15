@@ -10,6 +10,10 @@ namespace CSExercises
     {
         public static void Main(string[] args)
         {
+            Console.WriteLine("Enter the number");
+            double x = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("The square of the number is {0}", x * x);
+
             
         }
     }

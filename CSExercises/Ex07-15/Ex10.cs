@@ -10,7 +10,15 @@ namespace CSExercises
     {
         public static void Main(string[] args)
         {
-            
+            Console.WriteLine("Enter the value of x1,y1,x2,y2");
+            double x1 = Convert.ToDouble(Console.ReadLine());
+            double y1 = Convert.ToDouble(Console.ReadLine());
+            double x2 = Convert.ToDouble(Console.ReadLine());
+            double y2 = Convert.ToDouble(Console.ReadLine());
+            double distance = ((x2 - x1) * (x2 - x1)) + ((y2 - y1) * (y2 - y1));
+            Console.WriteLine("The distance between 2 points is {0}", Math.Sqrt(distance));
+
+
         }
     }
 }
