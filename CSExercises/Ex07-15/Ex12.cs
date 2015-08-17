@@ -14,7 +14,7 @@ namespace CSExercises
             double d = Convert.ToDouble(Console.ReadLine());
             double fc = 2.40;
             double fare = fc + (0.4 * d);
-            double r = Math.Round(fare, 1, MidpointRounding.AwayFromZero);
+            double r = Math.Round(fare, 2, MidpointRounding.AwayFromZero);
             
             Console.WriteLine("The total fare is ${0}", r);
           

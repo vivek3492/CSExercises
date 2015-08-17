@@ -10,19 +10,32 @@ namespace CSExercises
         public static void Main(string[] args)
         {
             Console.WriteLine("Enter your marks");
-            int marks = Convert.ToInt32(Console.ReadLine());
-            switch (marks)
+            double marks = Convert.ToDouble(Console.ReadLine());
+            if (marks>=80 && marks<=100)
             {
-                case 1: 
-                if (marks>=80 && marks<100 )
-                    Console.WriteLine("You have got A Grade");
-                    break;
-
-                     case 2: 
-                if (marks>=60&&marks<80 )
-                    Console.WriteLine("You have got B Grade");
-                    break; 
+                Console.WriteLine("You have scored A grade");
             }
+            else if (marks>=60 && marks<=79)
+            {
+                Console.WriteLine("You have scored B grade");
+
+            }
+            else if (marks >= 40 && marks <= 59)
+            {
+                Console.WriteLine("You have scored C grade");
+
+            }
+            else if (marks >= 0 && marks <= 40)
+            {
+                Console.WriteLine("You have scored F grade");
+
+            }
+            else
+            {
+                Console.WriteLine("Invalid marks");   
+            }
+            
+            
         }
     }
 }
